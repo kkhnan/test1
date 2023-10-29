@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>&lt;model-viewer&gt; template</title>
+    <meta charset="utf-8">
+    <meta name="description" content="&lt;model-viewer&gt; template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="./styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <!-- <model-viewer> HTML element -->
+    <model-viewer src="tractor_-_game_asset.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1">
+      <button class="Hotspot" slot="hotspot-1" data-position="-119.16590241177218m 366.370121456246m -98.18359948255592m" data-normal="-0.3822897581389761m -0.01734745280290207m 0.9238796494691799m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Muffler</div>
+      </button><button class="Hotspot" slot="hotspot-2" data-position="334.62093646299456m 137.6549006417885m 198.0834281238034m" data-normal="2.2542460558572052e-7m -6.942078815200165e-8m 0.9999999999999722m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Wheel</div>
+      </button>
+      <div class="progress-bar hide" slot="progress-bar">
+          <div class="update-bar"></div>
+      </div>
+      <button slot="ar-button" id="ar-button">
+          View in your space
+      </button>
+      <div id="ar-prompt">
+          <img src="ar_hand_prompt.png">
+      </div>
+    </model-viewer>  
+    <script src="script.js"></script>
+    <!-- Loads <model-viewer> for browsers: -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.2.0/model-viewer.min.js"></script>
+  </body>
+</html>
